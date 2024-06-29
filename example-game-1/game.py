@@ -1,12 +1,12 @@
 import random
 
 def guess_the_number():
-    print("Welcome to 'Guess the Number' game!")
+    print("Welcome to 'Guess the number game!'")
 
-    # Allow player to choose difficulty
+    # Allow the player to choose difficulty
     while True:
         try:
-            difficulty = int(input("Choose a difficulty level (1-Easy, 2-Medium, 3-Hard): "))
+            difficulty = int(input("Choose a difficulty level (1-Easy, 2-Medium, 3-Hard):"))
             if difficulty == 1:
                 max_number = 50
                 max_attempts = 10
@@ -27,11 +27,11 @@ def guess_the_number():
     attempts = 0
     guessed = False
 
-    print(f"I'm thinking of a number between 1 and {max_number}. You have {max_attempts} attempts.")
+    print(f"I'm thinking of a number between 1 and {max_number}. You gave {max_attempts} attempts.")
 
     while not guessed and attempts < max_attempts:
         try:
-            guess = int(input("Take a guess: "))
+            guess = int(input("Take a guess:"))
             attempts += 1
 
             if guess < number_to_guess:
@@ -53,4 +53,4 @@ def guess_the_number():
         guess_the_number()
 
 if __name__ == "__main__":
-    guess_the_number()
+    guess_the_number()                  
